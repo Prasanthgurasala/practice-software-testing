@@ -11,7 +11,10 @@
     "@types/node": "^24.6.2",
     "dotenv": "^17.2.3"
   },
-  "scripts": {},
+  "scripts": {
+    "playwright:test": "npx playwright test tests --project=chromium --workers=4 --max-failures=10 --retries=1 --reporter=line",
+    "playwright:debug": "npx playwright test tests --debug"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
